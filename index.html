@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIX Group</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" href="images/logoCIX.png" type="image/png">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-logo">
+                <a href="#cix">
+                    <img src="images/logoCIX.png" alt="CIX Group Logo">
+                </a>
+            </div>
+            <div class="navbar-menu">
+                <a href="#salon-spotify" class="nav-link">Salón Spotify</a>
+                <a href="#nosotros" class="nav-link">Nosotros</a>
+                <a href="#contacto" class="nav-link">Contacto</a>
+            </div>
+            <!-- El botón hamburguesa se añadirá dinámicamente con JS -->
+        </div>
+    </nav>
+
+    <!-- Sección CIX Group -->
+    <section id="cix" class="section">
+        <div class="container">
+            <div class="two-column">
+                <div class="column" onselectstart="return false" ondragstart="return false">
+                    <img src="images/logoCIX.png" alt="CIX Group Logo" class="logo-main" draggable="false" oncontextmenu="return false;">
+                </div>
+                <div class="column">
+                    <p>Somos la integración de las diferentes disciplinas que componen el universo de la publicidad a través de la comunicación, mercadeo, producción audiovisual, logística y tecnología.</p>
+                    <br>
+                    <p>Nos especializamos en proyectos de gran escala y alto impacto, a través del desarrollo de campañas de fidelización y conversión impulsando soluciones innovadoras y estratégicas para potenciar marcas y conectar con audiencias de manera única.</p>
+                    
+                    <p><strong>Proyecto Insignia:</strong></p>
+                    <a href="#salon-spotify" class="btn btn-spotify">
+                        <img src="images/spotify.png" alt="Spotify Icon" class="btn-icon">
+                        <span>Salón Spotify</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Salón Spotify Sección 1 -->
+    <section id="salon-spotify" class="section">
+        <div class="container">
+            <div class="two-column">
+                <div class="column gallery">
+                    <div class="image-gallery">
+                        <div class="gallery-item">
+                            <div class="gallery-link">
+                                <img src="images/salonspotify1.jpg" alt="Salón Spotify 1" class="gallery-img">
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-link">
+                                <img src="images/salonspotify2.jpg" alt="Salón Spotify 2" class="gallery-img">
+                            </div>
+                        </div>
+                        <div class="gallery-item">
+                            <div class="gallery-link">
+                                <img src="images/salonspotify3.jpg" alt="Salón Spotify 3" class="gallery-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <h2>Salón Spotify</h2>
+                    <p>Te presentamos Salón Spotify, tu nueva oportunidad de participar en el estilo de vida de tus clientes y abrir nuevas formas de comunicación en un nuevo sistema de pauta masiva.</p>
+                    <br>
+                    <p>Este servicio ofrece a las marcas acceso directo a audiencias comprometidas y en crecimiento, mediante colaboraciones con los mejores creadores de contenido de video podcast en Colombia, de esta forma lograrás maximizar la visibilidad y el engagement de tu marca, con contenidos de alta calidad y personalización.</p>
+                    
+                    <a href="#contacto" class="btn btn-next">
+                        <span>Contacto</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Modal para imágenes -->
+        <div id="image-modal" class="image-modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <img id="modal-img" src="" alt="Imagen ampliada">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Nosotros -->
+    <section id="nosotros" class="section nosotros-section" style="background-image: url('images/b5.png'); background-size: cover; background-position: center;">
+        <div class="container">
+            <!-- Título de la sección -->
+            <div class="nosotros-titulo">
+                <h2>Nosotros</h2>
+            </div>
+            
+            <!-- Primera parte vertical (dos columnas con videos) -->
+            <div class="nosotros-top">
+                <div class="two-column">
+                    <div class="column">
+                        <div class="video-container">
+                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/q9YPIEIo-7A" title="El Cauce Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="video-container">
+                            <iframe width="100%" height="315" src="https://www.youtube.com/embed/xytUrojyHGg" title="Imagine Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Segunda parte vertical (4 logos en una fila) -->
+            <div class="nosotros-logos">
+                <div class="nosotros-logo-item">
+                    <a href="https://www.grupoextrema.net/" target="_blank">
+                        <img src="images/logoextrema.png" alt="Extrema Logo" class="nosotros-logo">
+                    </a>
+                </div>
+                <div class="nosotros-logo-item">
+                    <a href="https://elcauce.co" target="_blank">
+                        <img src="images/logocauce.png" alt="El Cauce Logo" class="nosotros-logo">
+                    </a>
+                </div>
+                <div class="nosotros-logo-item">
+                    <a href="https://imaginecompany.co/" target="_blank">
+                        <img src="images/logoimagine.png" alt="Imagine Logo" class="nosotros-logo">
+                    </a>
+                </div>
+                <div class="nosotros-logo-item">
+                    <a href="https://www.instagram.com/nathalyborrerosas/" target="_blank">
+                        <img src="images/logonatha.png" alt="Nathaly Logo" class="nosotros-logo">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="section contact-section">
+        <div class="container">
+            <div class="contact-content" onselectstart="return false" ondragstart="return false">
+                <img src="images/logoCIX.png" alt="CIX Group Logo" class="contact-logo" draggable="false" oncontextmenu="return false;">
+                
+                <div class="contact-buttons">
+                    <a href="https://wa.me/573152403510" class="contact-btn whatsapp">
+                        <img src="images/whatsapp.png" alt="WhatsApp" class="contact-icon">
+                    </a>
+                    <a href="https://www.linkedin.com/company/c-i-x-group" class="contact-btn linkedin">
+                        <img src="images/linkedin.png" alt="LinkedIn" class="contact-icon">
+                    </a>
+                    <a href="mailto:gerencia@cixgroup.lat" class="contact-btn email">
+                        <img src="images/email.png" alt="Email" class="contact-icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-contact">
+                    <p>Contacto: +57 315 240 3510</p>
+                </div>
+                <div class="footer-info">
+                    <p>Correo: gerencia@cixgroup.lat</p>
+                </div>
+                <div class="footer-location">
+                    <p>Bogotá, Colombia, 2025</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
